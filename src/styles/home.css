@@ -1,7 +1,14 @@
 
 html {
+  -webkit-overflow-scrolling: auto;
   scroll-behavior: smooth;
   height: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -31,7 +38,7 @@ a {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 40px;
+  padding: 32px;
   /* position: fixed; Make it stick, even on scroll */
   overflow: auto;
 }
@@ -64,8 +71,14 @@ h1 {
   background-image: url('../images/bg.jpg')
 }
 
+h2, h3, h4, p {
+  font-family: 'Gill Sans';
+  color: grey;
+  font-weight: 400;
+}
+
 .about-container {
   height: 100%;
-  padding: 80px;
-  background-color: white;
+  padding: 32px 10% 32px 10% ;
+  background-color: #f1f1f1;
 }
