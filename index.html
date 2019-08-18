@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./src/styles/home.css" />
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/style.css" />
   </head>
 
   <body>
-    <div class="full-height" id="home">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#aboutme">Projects</a></li>
-      </ul>
+    <header class="header-wrapper">
+      <nav id="sticky-navbar" class="navbar">
+        <div class="container">
+            <ul class="navbar-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#aboutme">About me</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
 
-      <div style="padding: 50px">
-          <h1 style="color: white; font-weight: 600;">Rithy Uy</h1>
-          <p style="color: white; opacity: 0.7;">~You may have a great dream.</br>Matter is will you make it come true or continue sleeping?</p>        
+    <section id="home" class="intro-wrapper scrollspy">
+      <div class="container">
+        <div class="author-intro">
+            <h1 class="author-name">Rithy Uy</h1>
+            <p class="author-desc">~You may have a great dream. Matter is </br>will you make it come true or continue sleeping?</p>        
+        </div>
       </div>
+      <img src="./src/assets/images/rithy.png" class="overlay-img" />
+    </section>
 
-      <img src="./src/images/rithy.png" class="bottom-right-image" />
-    </div>
-
-    <div class="about-container" id="aboutme">
-
-        <h1 style="text-align: center">About me</h1>
-        <h3 style="color: cornflowerblue">What do I do for living?</h2>
+    <section class="section about-section scrollspy" id="aboutme">
+      <div class="container">
+        <h1 class="section-title">About me</h1>
+        <h3 class="subtitle">Summerize</h2>
         
-        <p style="text-align: justify;">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. 
-            Cum sociis natoque penatibus et magnis dis parturient montes, 
-            nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
-            rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
-            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
-            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, 
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. 
-            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
-            sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        <p>
+          TL;DR</br>
+          I'm currently working as a <span>Senior Android Developer</span> at Okoone.</h3></br>
+          Experienced working with Backing industry & IT solution company. Skilled in fullstack mobile development with both Native and 
+          hybrid(Android, iOS, React-Native & Flutter). 
+          Strong engineering professional with a Bachelor degree of Computer Science in Royal University of Phnom Penh(RUPP) & Certificate focused in Android Development from Cambodia Korea Corporation Center.
         </p>
+<!--   
+        <h3 class="subtitle">Work experiences</h2>
+        <div class="horizontal">
+          <img id="profileImage" src="http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg">
+          <span>Profile Name</span>
+        </div> -->
+      </div>
+    </section>
 
-        <h3 style="color: cornflowerblue">Marrital status</h2>
-        
-    </div>
+    <script src="./src/assets/js/jquery.min.js"></script>
+    <script src="./src/assets/js/jquery.sticky.js"></script>
+    <script src="./src/assets/js/jquery.easing.min.js"></script>
+    <script src="./src/assets/js/script.js"></script>
   </body>
 </html>
