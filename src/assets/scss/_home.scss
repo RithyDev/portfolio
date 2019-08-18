@@ -11,6 +11,10 @@
   padding-left: 1rem;
   padding-right: 1rem;
   overflow: hidden;
+
+  h1 {
+    font-weight: 500;
+  }
 }
 
 .header-wrapper {
@@ -38,7 +42,7 @@
       
       li {
         display: inline-block;
-        
+
         a {
           position: relative;
           display: block;
@@ -114,6 +118,14 @@
     display: block;
     padding: 1rem;
     z-index: 2;
+
+    h1 {
+      margin-top: 80px; 
+      color: white;
+      line-height:1.1em;
+
+      
+    }
   }
   .author-name {
     color: $white;
@@ -127,27 +139,85 @@
   }
 }
 
+
+.sign-font {
+  font-weight: 100;
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 2.8rem;
+  color: rgb(133, 133, 133);
+  margin: 0 auto;
+}
+
 .section {
   position: relative;
   display: block;
 
+  &.contact-section {
+    padding: 5rem 0;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  h1, h2, h3 {
+    font-weight: 500;
+  }
 
   &.about-section {
     padding: 5rem 0;
+    margin-left: 20%;
+    margin-right: 20%;
 
+    p {
+      color: rgb(44, 44, 44);
+      text-align: justify;
+    }
+  }
+
+  .section-title {
+    position: relative;
+    color: $blacker;
+    font-size: 2.5rem;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1em;
+  }
+}
+
+//Mobile Phone
+@media(min-width: 400px) {
+  .section {
     .section-title {
-      position: relative;
-      color: $black;
-      font-size: 2.5rem;
-      margin-top: 0;
-      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    &.about-section {
+      margin-left: 24px;
+      margin-right: 24px; 
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 }
 
-
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  .section {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    &.about-section {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -161,13 +231,27 @@
     min-height: 100vh;
 
     .overlay-img {
-      height: 85%;
+      height: 55%;
     }
   }
 
   .section {
-    &.about-section {
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    &.contact-section {
       min-height: 100vh;
+    }
+
+    &.about-section {
+      margin-left: 15%;
+      margin-right: 15%; 
+    }
+
+    p {
+      font-size: 1.2rem;
     }
   }
 }
@@ -181,7 +265,22 @@
 
   .intro-wrapper {
     .overlay-img {
-      height: 90%;
+      height: 70%;
+    }
+  }
+
+  .section {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    &.about-section {
+      margin-left: 15%;
+      margin-right: 15%; 
+    }
+
+    p {
+      font-size: 1.2rem;
     }
   }
 }
@@ -195,6 +294,23 @@
   .intro-wrapper {
     .overlay-img {
       height: 95%;
+    }
+  }
+  
+  .section {
+    .section-title {
+      .section-title {
+        font-size: 2.5rem;
+      }
+    }
+
+    &.about-section {
+      margin-left: 15%;
+      margin-right: 15%; 
+    }
+
+    p {
+      font-size: 1.2rem;
     }
   }
 }
